@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\API\FunctionController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use PhpParser\Builder\Function_;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +21,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('profiles', [FunctionController::class, 'stock']);
+Route::post('motors', [FunctionController::class, 'penjualan']);
+Route::post('mobils', [FunctionController::class, 'penjualan']);
+
+

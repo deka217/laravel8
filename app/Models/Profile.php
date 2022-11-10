@@ -28,12 +28,12 @@ class Profile extends Authenticatable
     ];
     public function relasimotor()
     {
-        return $this->hasMany(Motor::class, 'profile_id','motor_id');
+        return $this->hasMany(Motor::class, 'profile_id','_id');
     }
 
     public function relasimobil()
     {
-        return $this->belongsTo(Mobil::class, 'profile_id','mobil_id');
+        return $this->hasMany(Mobil::class, 'profile_id','mobil_id');
     }
 
     

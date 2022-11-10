@@ -28,7 +28,7 @@ class Motor extends Authenticatable
     ];
     public function relasiprofile()
     {
-        return $this->hasMany(Profile::class, 'jenisId','profile_id');
+        return $this->hasMany(Profile::class, 'jenisId','motor_id');
     }
 
     
